@@ -7,14 +7,14 @@ function App() {
     dispatch({ type: 'INC' });
   }
   const decrement = () => {
-
+    dispatch({ type: 'DEC' });
   }
   return (
     <div >
       <h1>Counter App</h1>
       <h2>{counter}</h2>
       <button onClick={increment}>Increment</button>
-      <button onClick={Decreement}>Decrement</button>
+      <button onClick={decrement}>Decrement</button>
     </div>
   );
 }
